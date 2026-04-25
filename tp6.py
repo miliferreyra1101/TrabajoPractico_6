@@ -57,3 +57,13 @@ if respuesta.upper() != "SIGUIENTE":
             print("Amonestaciones: ", {alumno_elegido["Amonestaciones"]})
     else:
         print("Ese número de alumno no existe.")
+else:
+    print("...")
+
+alumno_mod = input("¿Desea modificar los datos de algún alumno?. Si lo desea, ingrese su número. De lo contrario, ingrese SIGUIENTE: ")
+if respuesta.upper() != "SIGUIENTE":
+    indice = int(alumno_mod) - 1
+    if 0 <= indice  and indice < len(datos["alumnos"]):
+        print(f"\nModificando a: {alumno_elegido['Nombre']}")
+        print("1. Notas | 2. Faltas | 3. Amonestaciones")
+    modificar = input("¿Qué desea modificar? (Ingrese el número): ")
