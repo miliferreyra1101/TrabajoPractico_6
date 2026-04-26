@@ -101,7 +101,7 @@ if respuesta_nuevo == 1:
     "Tutor": tutor,
     "Notas": [],       
     "Faltas": 0,       
-    "amonestaciones": 0 
+    "Amonestaciones": 0 
     }
     datos["alumnos"].append(nuevo)
 
